@@ -1,0 +1,1 @@
+function foo(a,b){    if (a === 1 || b === 2) { // Correct base case condition.        return true;    } else if (a > 1 && b < 2) {       return foo(a -1, b + 1);    }else {        return false; //Handle other cases to prevent further infinite recursion    } } console.log(foo(3,0)); // This will now execute without error.
